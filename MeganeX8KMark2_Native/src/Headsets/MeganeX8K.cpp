@@ -16,8 +16,8 @@ void MeganeX8KShim::PosTrackedDeviceActivate(uint32_t &unObjectId, vr::EVRInitEr
 	vr::PropertyContainerHandle_t container = vr::VRProperties()->TrackedDeviceToPropertyContainer(unObjectId);
 	
 	std::string modelNumber = vr::VRProperties()->GetStringProperty(container, vr::Prop_ModelNumber_String);
-	if(modelNumber != "MeganeX superlight 8K"){
-		// deactivate shim if this is not a MeganeX superlight 8K
+	if(modelNumber != "MeganeX 8K Mark II"){
+		// deactivate shim if this is not a MeganeX 8K Mark II
 		shimActive = false;
 		return;
 	}
